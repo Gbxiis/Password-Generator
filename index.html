@@ -21,31 +21,30 @@
                     <div class="col-12 opacity-75 border bg-secondary d-flex flex-column justify-content-center align-items-center"
                         style="height: 70vh;">
                         <div class="">
-                            <div class="form-check p-2 ">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Letters
-                                </label>
-                            </div>
                             <div class="form-check p-2">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="myCheckbox" onclick="pegarValorCheckbox()">
+                                <label class="form-check-label" for="myCheckbox">
+                                  Letters
+                                </label>
+                              </div>
+                            <div class="form-check p-2">
+                                <input class="form-check-input" type="checkbox" value="" id="myCheckbox2" checked>
                                 <label class="form-check-label" for="flexCheckChecked">
                                     Numbers
                                 </label>
                             </div>
                             <div class="form-check p-2">
-                                <input class="form-check-input p-2" type="checkbox" value="" id="flexCheckChecked"
-                                    checked>
+                                <input class="form-check-input p-2" type="checkbox" value="" id="myCheckbox3" checked>
                                 <label class="form-check-label p-2" for="flexCheckChecked">
                                     Characters
                                 </label>
                             </div>
                             <div class="input-group flex-nowrap p-2">
-                                <span class="input-group-text" id="addon-wrapping">0</span>
+                                <span class="input-group-text" id="password">0</span>
                                 <input type="text" class="form-control" aria-label="Username"
                                     aria-describedby="addon-wrapping">
                             </div>
-                            <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                            <input type="range" class="form-range" min="0" max="25" id="customRange2">
                         </div>
                     </div>
                     <div class="col " style="height: 700px; width: 100%;">
@@ -69,11 +68,18 @@
                                     One tip is to add information related to the specific website in your password - for
                                     example, include the initials FB, or FCB, or something similar in the middle of your
                                     password for Facebook;</li>
-                                <li class="p-3">The password should be difficult only for others! Always choose something that you can easily remember;</li>
-                                <li class="p-3">Never share your password! Sometimes, for reasons of trust or even naivety, we can end up revealing our password to someone else - such as a friend, girlfriend, boyfriend or girlfriend.</li>
+                                <li class="p-3">The password should be difficult only for others! Always choose
+                                    something that you can easily remember;</li>
+                                <li class="p-3">Never share your password! Sometimes, for reasons of trust or even
+                                    naivety, we can end up revealing our password to someone else - such as a friend,
+                                    girlfriend, boyfriend or girlfriend.</li>
                                 <li class="p-3">Change your password periodically;</li>
-                                <li class="p-3">Avoid writing the password down somewhere. The ideal thing is to memorize it. If you can't, try to write it down in a code you understand and hide it well on the paper it's on;</li>
-                                <li class="p-3">When you leave a website, always remember to log out. That way, if someone else uses the computer after you, they are less likely to find your account open.</li>
+                                <li class="p-3">Avoid writing the password down somewhere. The ideal thing is to
+                                    memorize it. If you can't, try to write it down in a code you understand and hide it
+                                    well on the paper it's on;</li>
+                                <li class="p-3">When you leave a website, always remember to log out. That way, if
+                                    someone else uses the computer after you, they are less likely to find your account
+                                    open.</li>
                             </ul>
 
 
@@ -88,7 +94,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
