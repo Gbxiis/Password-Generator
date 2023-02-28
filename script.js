@@ -1,17 +1,26 @@
-const alphabet = "abcdefghijklmnopqrstuvwxyz"
+var alphabet;
+var letters ;
+var numbers ;
+var chatchers; 
 
-const letters = alphabet.split("")
+function getValueCheckbox() {
+  const checkbox = document.getElementById("myCheckbox");
+  const checkbox2 = document.getElementById("myCheckbox2");
+  const checkbox3 = document.getElementById("myCheckbox3");
 
-const numbers = [1,2,3,4,5,6,7,8,9,10]
-
-function pegarValorCheckbox() {
-    // Obter referência ao checkbox
-    const checkbox = document.getElementById("myCheckbox");
-  
-    // Verificar se o checkbox está marcado
-    if (checkbox.checked) {
-      // Obter o valor do checkbox
-      const valor = checkbox.value;
-      console.log("Valor do checkbox:", valor);
-    }
+  if (checkbox.checked) {
+    alphabet = "abcdefghijklmnopqrstuvwxyz";
+    letters = alphabet.split("");
+    console.log(letters)
+  } 
+  if(checkbox2.checked){
+    numbers = [1,2,3,4,5,6,7,8,9,10]
+    console.log(numbers)
   }
+  if(checkbox3.checked){
+   chatchers = ["!","@","#","$","%","^","&","*","(",")"]
+   console.log(chatchers)
+  }
+
+
+}
