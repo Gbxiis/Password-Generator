@@ -11,9 +11,11 @@ function getValueCheckbox() {
   const result = document.getElementById("result")
 
   if (checkbox.checked) {
-    alphabet = "abcdefghijklmnopqrstuvwxyz";
-    letters = alphabet.split("");
-    console.log(letters)
+    let alphabet = "abcdefghijklmnopqrstuvwxyz";
+    let letters = alphabet.split("");
+    let randomIndex = Math.floor(Math.random() * letters.length);
+    let randomLetter = letters[randomIndex];
+    console.log(randomLetter);
   } 
   if(checkbox2.checked){
     numbers = [1,2,3,4,5,6,7,8,9,10]
