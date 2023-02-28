@@ -3,10 +3,12 @@ var letters ;
 var numbers ;
 var chatchers; 
 
+
 function getValueCheckbox() {
   const checkbox = document.getElementById("myCheckbox");
   const checkbox2 = document.getElementById("myCheckbox2");
   const checkbox3 = document.getElementById("myCheckbox3");
+  const result = document.getElementById("result")
 
   if (checkbox.checked) {
     alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -18,9 +20,7 @@ function getValueCheckbox() {
     console.log(numbers)
   }
   if(checkbox3.checked){
-   chatchers = ["!","@","#","$","%","^","&","*","(",")"]
+   chatchers = ["!","@","#","$","%","^","&","*","(",")","[","]","_"]
    console.log(chatchers)
   }
-
-
 }
