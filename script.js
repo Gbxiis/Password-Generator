@@ -12,15 +12,16 @@ function getValueCheckbox() {
   if (checkbox.checked) {
     let alphabet = "abcdefghijklmnopqrstuvwxyz";
     let letters = alphabet.split("");
-    let randomIndex = Math.floor(Math.random() * letters.length);
-    let randomLetter = letters[randomIndex];
+    var randomIndex = Math.floor(Math.random() * letters.length);
+    var randomLetter = letters[randomIndex];
     console.log(randomLetter);
   }
   if (checkbox2.checked) {
     numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    let randomIndex = Math.floor(Math.random() * numbers.length);
-    let randomNumber = numbers[randomIndex];
-    console.log(randomNumber);
+    var randomIndex = Math.floor(Math.random() * numbers.length);
+    var randomNumber = numbers[randomIndex];
+    var test = [randomChachers,randomNumber,randomLetter]
+    console.log(test);
   }
   if (checkbox3.checked) {
     chatchers = [
@@ -38,8 +39,8 @@ function getValueCheckbox() {
       "]",
       "_",
     ];
-    let randomIndex =  Math.floor(Math.random() * chatchers.length)
-    let randomChachers  = chatchers[randomIndex]
+    var randomIndex =  Math.floor(Math.random() * chatchers.length)
+    var randomChachers  = chatchers[randomIndex]
     console.log(randomChachers)
   }
 }
