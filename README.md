@@ -11,9 +11,9 @@ Além disso, essa aplicação foi construída com o framework Bootstrap, que aju
 A experiência de utilizar Bootstrap pela primeira vez foi positiva, já que ele oferece diversas classes e componentes prontos para serem utilizados, o que tornou o processo de construir a página mais rápido e fácil. 
 
 
-## Layout mobile
-![password-web](https://user-images.githubusercontent.com/110855086/223138286-a999a8ac-b1fa-4d06-8673-cd6aa677b502.gif)
 ## Layout web
+![password-web](https://user-images.githubusercontent.com/110855086/223138286-a999a8ac-b1fa-4d06-8673-cd6aa677b502.gif)
+## Layout mobile
 ![password-mobile](https://user-images.githubusercontent.com/110855086/223138304-03a878dc-e7f2-4287-85a6-8b62e8d0757b.gif)
 
 
