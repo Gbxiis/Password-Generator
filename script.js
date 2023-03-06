@@ -27,7 +27,7 @@ function getValueCheckbox() {
   }
 
   if (checkbox2.checked) {
-    mixedChars = mixedChars.concat(numbers, characters);
+    mixedChars = mixedChars.concat(numbers);
   }
 
   if (checkbox3.checked) {
