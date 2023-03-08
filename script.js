@@ -81,6 +81,13 @@ function copyText() {
   document.body.removeChild(tempInput);
 }
 
+const rangex = document.getElementById("myRange");
+const rangeValue = document.getElementById("rangeValue");
+
+rangex.addEventListener("input", () => {
+  rangeValue.innerHTML = rangex.value;
+});
+
 const range = document.getElementById("myRange");
 
 let passwordLength = range.value;
