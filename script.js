@@ -1,4 +1,3 @@
-
 function getValueCheckbox() {
   const checkbox = document.getElementById("myCheckbox");
   const checkbox2 = document.getElementById("myCheckbox2");
@@ -10,9 +9,23 @@ function getValueCheckbox() {
   let alphabet = "abcdefghijklmnopqrstuvwxyz";
   let letters = alphabet.split("");
   let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-  let characters = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "[", "]", "_"];
+  let characters = [
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")",
+    "[",
+    "]",
+    "_",
+  ];
 
-  let passwordLength = range.value; 
+  let passwordLength = range.value;
 
   range.addEventListener("input", function () {
     passwordLength = this.value;
@@ -33,10 +46,9 @@ function getValueCheckbox() {
   if (checkbox3.checked) {
     mixedChars = mixedChars.concat(characters);
   }
-  if(!checkbox.checked & !checkbox2.checked & !checkbox3.checked){
-    mixedChars = ['']
+  if (!checkbox.checked & !checkbox2.checked & !checkbox3.checked) {
+    mixedChars = [""];
   }
-
 
   for (let i = mixedChars.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -44,7 +56,6 @@ function getValueCheckbox() {
   }
 
   function generatePassword() {
-
     let password = "";
     for (let i = 0; i < passwordLength; i++) {
       let randomIndex = Math.floor(Math.random() * mixedChars.length);
@@ -56,6 +67,19 @@ function getValueCheckbox() {
 
   return generatePassword();
 }
+const copyButton = document.getElementById("copy");
+copyButton.addEventListener("click", copyText);
+
+function copyText() {
+  const valor = document.getElementById("password");
+  const password = valor.textContent || valor.innerText;
+  const tempInput = document.createElement("input");
+  tempInput.value = password;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+}
 
 const range = document.getElementById("myRange");
 
@@ -63,11 +87,11 @@ let passwordLength = range.value;
 range.addEventListener("input", () => {
   passwordLength = range.value;
   const valor = document.getElementById("password");
-  valor.innerHTML = getValueCheckbox();
+  valor.innerText = getValueCheckbox();
 });
 
 document.addEventListener("DOMContentLoaded", () => {
   const valor = document.getElementById("password");
   valor.innerHTML = getValueCheckbox();
+  copyText();
 });
-
