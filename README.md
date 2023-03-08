@@ -3,6 +3,8 @@
 
 # Sobre o projeto
 
+https://passwordgeneratorgb.netlify.app/
+
 
 Essa aplicação é um gerador de senhas que utiliza HTML, CSS e JavaScript para funcionar. Ela oferece opções para o usuário escolher se deseja incluir letras, números e caracteres especiais na senha, bem como a quantidade de caracteres desejada.
 
